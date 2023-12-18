@@ -56,7 +56,7 @@ export default function Home() {
             initial={{ opacity: 0, y: -50}}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: .8 }}
-            className="text-6xl flex justify-center text-teal-600"
+            className="text-6xl flex justify-center text-teal-500"
           >
         Joel Watlington
 		        </motion.div>
@@ -66,7 +66,7 @@ export default function Home() {
               Positive. Passionate. Proficient.
             </h3>
             <h3 className="text-2xl  dark:text-white md:text-3xl">
-            👉 Software Engineer 👈
+            Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Easy to work with and experienced government employee providing services for any programming need and solution. Join me down below and lets work together!
