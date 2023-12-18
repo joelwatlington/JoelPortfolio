@@ -7,7 +7,7 @@ import { SiIndeed } from "react-icons/si";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import joel from "../public/joelPic1.jpg";
-
+import { motion } from "framer-motion";
 import Image from "next/image";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.svg";
@@ -49,11 +49,16 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Joel Watlington
-            </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Positive, Passionate- Software Engineer
+          <motion.div 
+            initial={{ opacity: 0, y: -50}}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: .8 }}
+            className="text-6xl flex justify-center text-teal-600"
+          >
+        Joel Watlington
+		        </motion.div>
+            <h3 className="text-2xl py-3 dark:text-white md:text-3xl">
+              Positive. Passionate. Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Easy to work with and experienced government employee providing services for any programming need and solution. Join me down below and lets work together!
