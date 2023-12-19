@@ -1,8 +1,10 @@
+
 import Head from "next/head";
 import {
   AiFillLinkedin,
   AiFillYoutube,
 } from "react-icons/ai";  
+
 import { SiIndeed } from "react-icons/si";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -24,7 +26,7 @@ import web12 from "../public/web12.jpg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -53,9 +55,9 @@ export default function Home() {
             
           </nav>
           <motion.div 
-            initial={{ opacity: 0, y: -50}}
+            initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: .8 }}
+            transition={{ duration: .8, delay: .4 }}
             className="text-6xl flex justify-center text-teal-500"
           >
         Joel Watlington
@@ -101,82 +103,130 @@ export default function Home() {
               My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={web1} width={100} height={100} />
+		  
+		  <motion.ul className="flex flex-wrap items-center">
+              <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8">
+              <Image alt="" src={web1} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Spring boot
               </h3>
               <p className="py-2">
                 Insert text here
               </p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web2} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+				</div>
+              </li>
+              
+              <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+              <Image alt="" src={web2} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Postman
               </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web3} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Docker</h3>
+              </li>
+			  
+			  <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+              <Image alt="" src={web3} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Docker
+              </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web4} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">C#</h3>
+              </li>
+			  
+			  <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+              <Image alt="" src={web4} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                C#
+              </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web5} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Angular</h3>
+              </li>
+			  
+			  <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+              <Image alt="" src={web5} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Angular
+              </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web6} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Java</h3>
+              </li>
+			  
+			  <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+              <Image alt="" src={web6} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Java
+              </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web7} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">JavaScript</h3>
+              </li>
+			  
+			  <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap ">
+              <Image alt="" src={web7} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                JavaScript
+              </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web8} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Elasticsearch</h3>
+              </li>
+			  
+			  <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+              <Image alt="" src={web8} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Elasticsearch
+              </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web9} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Python</h3>
+              </li>
+			  
+			  <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+              <Image alt="" src={web9} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Python
+              </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={web10} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Github</h3>
+              </li>
+			  
+			  <li>
+                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+              <Image alt="" src={web10} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2  ">
+                Git
+              </h3>
               <p className="py-2">
                 Insert text here
               </p>
             </div>
-          </div>
+              </li>
+              
+            </motion.ul>
+          
         </section>
         <section className="py-10">
           <div>
