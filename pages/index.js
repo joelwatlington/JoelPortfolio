@@ -1,5 +1,6 @@
 
 import Head from "next/head";
+import Link from 'next/link';
 import {
   AiFillLinkedin,
   AiFillYoutube,
@@ -29,6 +30,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
+    
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Create Next App</title>
@@ -37,10 +39,13 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
+
+
+
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">Welcome to my Portfolio!</h1>
             
-            <ul className="flex items-center">
+            <ul className="flex items-center ">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -49,20 +54,34 @@ export default function Home() {
               </li>
               
               <li>
-                <a className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8" href="/JoelsResume.pdf" download>Resume</a>
+                <a className="bg-gradient-to-r from-purple-500 text- to-cyan-500 text-white px-4 py-2 border-none rounded-md ml-8" href="/JoelsResume.pdf" download>Resume</a>
               </li>
-              
+              <li>
+                <Link href="#Coding" scroll={false} className=" bg-gradient-to-r from-cyan-500 text- to-indigo-500 text-white px-4 py-2 border-none rounded-md ml-8">
+                Coding Expertise
+                </Link>
+              </li>
+              <li>
+                <Link href="#Working" scroll={false} className=" bg-gradient-to-r from-indigo-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8">
+                  Work Experience
+                </Link>
+              </li>
+              <li>
+                <Link href="#Contact" scroll={false} className="bg-gradient-to-r from-teal-500 text- to-purple-500 text-white px-4 py-2 border-none rounded-md ml-8">
+                  Contact me
+                </Link>
+              </li>
             </ul>
             
+            
           </nav>
-		  
           <motion.div 
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: .8, delay: .4 }}
             className="text-6xl flex justify-center text-teal-500"
           >
-        Joel Watlington
+          Joel Watlington
 		        </motion.div>
           <div className="text-center p-10 py-10">
           
@@ -88,7 +107,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="Coding" className="scroll-smooth focus:scroll-auto">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Coding Expertise</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -178,7 +197,7 @@ export default function Home() {
 		  
           
         </section>
-        <section className="py-10">
+        <section id="Working">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Relevant Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -231,6 +250,17 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+        <section id="Contact">
+          <h3 className="text-3xl py-1 dark:text-white ">Contact</h3>
+          <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Email - joelwatlington7@gmail.com
+          </p>
+          <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Phone - (207) 659 - 9964
+          </p>
+          <br></br>
+          <br></br>
         </section>
         
       </main>
