@@ -4,7 +4,7 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
 } from "react-icons/ai";  
-
+import Grid from '@mui/material/Grid';
 import { SiIndeed } from "react-icons/si";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -12,7 +12,7 @@ import joel from "../public/joelPic1.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import web1 from "../public/web1.png";
-import web2 from "../public/web2.svg";
+import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
@@ -23,6 +23,7 @@ import web9 from "../public/web9.jpg";
 import web10 from "../public/web10.png";
 import web11 from "../public/web11.svg";
 import web12 from "../public/web12.jpg";
+import web13 from "../public/web13.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -54,6 +55,7 @@ export default function Home() {
             </ul>
             
           </nav>
+		  
           <motion.div 
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -103,129 +105,77 @@ export default function Home() {
               My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
             </p>
           </div>
-		  
-		  <motion.ul className="flex flex-wrap items-center">
-              <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8">
-              <Image alt="" src={web1} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Spring boot
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-				</div>
-              </li>
-              
-              <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
-              <Image alt="" src={web2} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Postman
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-			  
-			  <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
-              <Image alt="" src={web3} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Docker
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-			  
-			  <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+          
+          <Grid container spacing={2}>
+            
+            <Grid item xs={6} md={2}>
               <Image alt="" src={web4} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                C#
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-			  
-			  <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">C# – Utilized ASP.NET and ASP Classic framework to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the orginization of coding practices</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
               <Image alt="" src={web5} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Angular
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-			  
-			  <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Angular framework – reliably worked tickets under a large team with the federal government developing a full-stack application to meet expectations of multiple product owners</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
               <Image alt="" src={web6} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Java
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-			  
-			  <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap ">
-              <Image alt="" src={web7} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                JavaScript
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-			  
-			  <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
-              <Image alt="" src={web8} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Elasticsearch
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-			  
-			  <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
-              <Image alt="" src={web9} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Python
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-			  
-			  <li>
-                <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1 ml-8 lg:flex-wrap">
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Java – Successfully crafted back-end functionality for API calls using Java while working for the federal government</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
               <Image alt="" src={web10} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Git
-              </h3>
-              <p className="py-2">
-                Insert text here
-              </p>
-            </div>
-              </li>
-              
-            </motion.ul>
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">JavaScript – Manipulated JavaScript for various data changes in the federal government and the CDC utilizing Rhapsody. There have always been various JavaScript needs such as item selection, Sorting algorithms, math calculations, and so much more!</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web7} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Git – deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web8} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md leading-8 text-gray-800 dark:text-gray-200">Elasticsearch, Kibana, EQL, and Lucene – Competently developed tickets through the Elasticsearch team by organizing date and creating install packages. Install packages needed scripts, indice changes, file trees, and written documentation to ensure proper data was loaded into the Elasticsearch image for customer support</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web9} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md leading-8 text-gray-800 dark:text-gray-200">Python – Built multiple scripts i.e. manipulating JSON and NDJSON files under the Elasticsearch team. For every integration package that clients would need to install there included different scripts to help data flow into Elasticsearch for diagram accuracy</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web1} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Spring Boot – reliably worked tickets through large scale teams under the federal government with frontend, back-end, and database components using Spring Boot framework </p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web13} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-4 leading-8 text-gray-800 dark:text-gray-200">SQL Developer, PostgreSQL, and SQL Server Management Studio – Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications </p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web3} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Docker – Contained programming functionality through Docker under the federal government to improve security and deployment flow</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web2} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-7 leading-8 text-gray-800 dark:text-gray-200">Postman – Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine</p>
+            </Grid>
+          </Grid>
+		  
           
         </section>
         <section className="py-10">
