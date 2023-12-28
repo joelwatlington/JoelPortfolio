@@ -38,7 +38,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
 	  
-	  /* list for creating the top bar to turn on dark or light mode and navigate the program */
+	  {/* list for creating the top bar to turn on dark or light mode and navigate the program */}
 	  
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
@@ -71,7 +71,7 @@ export default function Home() {
             </ul>
           </nav>
 		  
-		  /* Introduction statement with a motion div to add an animation to the title */
+		  {/* Introduction statement with a motion div to add an animation to the title */}
 		  
           <motion.div 
             initial={{ opacity: 0, y: -50 }}
@@ -93,7 +93,7 @@ export default function Home() {
               Easy to work with and experienced government employee providing services for any programming need and solution. Join me down below and lets work together!
             </p>
 			
-			/* Needs to be changed later when video is added */
+			{/* Needs to be changed later when video is added */}
 			
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/joel-watlington-392058200/" target="_blank" rel="noreferrer">
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
         </section>
 		
-		/* Beginning of coding experience portion. A grid was selected to give concise information in a compact way */
+		{/* Beginning of coding experience portion. A grid was selected to give concise information in a compact way */}
 		
         <section id="Coding" className="scroll-smooth focus:scroll-auto">
           <div>
@@ -192,7 +192,7 @@ export default function Home() {
           </Grid>
         </section>
 		
-		/* Beginning of work experience portion */
+		{/* Beginning of work experience portion */}
 		
         <section id="Working">
           <div>
@@ -249,7 +249,7 @@ export default function Home() {
           </div>
         </section>
 		
-		/* Beginning of contact portion */
+		{/* Beginning of contact portion */}
 		
         <section id="Contact">
           <h3 className="text-3xl py-1 dark:text-white ">Contact</h3>
