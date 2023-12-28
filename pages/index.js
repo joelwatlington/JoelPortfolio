@@ -28,9 +28,8 @@ import web13 from "../public/web13.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-
+  
   return (
-    
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Create Next App</title>
@@ -38,13 +37,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+	  
+	  /* list for creating the top bar to turn on dark or light mode and navigate the program */
+	  
         <section className="min-h-screen">
-
-
-
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">Welcome to my Portfolio!</h1>
-            
             <ul className="flex items-center ">
               <li>
                 <BsFillMoonStarsFill
@@ -52,7 +50,6 @@ export default function Home() {
                   className=" cursor-pointer text-2xl"
                 />
               </li>
-              
               <li>
                 <a className="bg-gradient-to-r from-purple-500 text- to-cyan-500 text-white px-4 py-2 border-none rounded-md ml-8" href="/JoelsResume.pdf" download>Resume</a>
               </li>
@@ -72,9 +69,10 @@ export default function Home() {
                 </Link>
               </li>
             </ul>
-            
-            
           </nav>
+		  
+		  /* Introduction statement with a motion div to add an animation to the title */
+		  
           <motion.div 
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -82,7 +80,7 @@ export default function Home() {
             className="text-6xl flex justify-center text-teal-500"
           >
           Joel Watlington
-		        </motion.div>
+		  </motion.div>
           <div className="text-center p-10 py-10">
           
             <h3 className="text-2xl py-3 dark:text-white md:text-3xl">
@@ -94,19 +92,24 @@ export default function Home() {
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Easy to work with and experienced government employee providing services for any programming need and solution. Join me down below and lets work together!
             </p>
+			
+			/* Needs to be changed later when video is added */
+			
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/joel-watlington-392058200/" target="_blank" rel="noreferrer">
               <AiFillLinkedin />
               </a>
               <SiIndeed />
               <AiFillYoutube />
-              
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={joel} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
+		
+		/* Beginning of coding experience portion. A grid was selected to give concise information in a compact way */
+		
         <section id="Coding" className="scroll-smooth focus:scroll-auto">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Coding Expertise</h3>
@@ -114,19 +117,12 @@ export default function Home() {
               Throughout my years of experience I have been heavily involved with work inside the federal and state government. I am proud of my <a className="text-teal-500">top-secret security clearance</a>, 
               my <a className="text-teal-500">linux certification</a>, and my <a className="text-teal-500" href="/JoelsCertification.pdf" download>Comptia Security+ Certification</a> from working with Robins AFB to say that I am both intelligent and dependable. While working for the State of Maine I earned my nomination
               for a CARES award by providing excellent customer service through good communication skills and technical knowledge.
-
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-               
-
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
             </p>
           </div>
-          
           <Grid container spacing={2}>
-            
             <Grid item xs={6} md={2}>
               <Image alt="" src={web4} width={100} height={100} />
             </Grid>
@@ -191,12 +187,13 @@ export default function Home() {
               <Image alt="" src={web2} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-7 leading-8 text-gray-800 dark:text-gray-200">Postman – Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine</p>
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">Postman – Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine</p>
             </Grid>
           </Grid>
-		  
-          
         </section>
+		
+		/* Beginning of work experience portion */
+		
         <section id="Working">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Relevant Experience</h3>
@@ -251,6 +248,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+		
+		/* Beginning of contact portion */
+		
         <section id="Contact">
           <h3 className="text-3xl py-1 dark:text-white ">Contact</h3>
           <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
