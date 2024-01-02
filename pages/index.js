@@ -51,7 +51,7 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a className="bg-gradient-to-r from-purple-500 text- to-cyan-500 text-white px-4 py-2 border-none rounded-md ml-8" href="/JoelsResume.pdf" download>Resume</a>
+                <a className="bg-gradient-to-r from-purple-500 text- to-cyan-500 text-white px-4 py-2 border-none rounded-md ml-8" href="/JoelsResume.docx" download>Resume</a>
               </li>
               <li>
                 <Link href="#Coding" scroll={false} className=" bg-gradient-to-r from-cyan-500 text- to-indigo-500 text-white px-4 py-2 border-none rounded-md ml-8">
