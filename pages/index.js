@@ -127,13 +127,13 @@ export default function Home() {
               <Image alt="" src={web4} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">C# – Utilized ASP.NET and ASP Classic framework to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the orginization of coding practices</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">C# – Utilized ASP.NET and ASP Classic frameworks to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the orginization of coding practices</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web5} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Angular – Finalized front-end visualization with the federal government developing a full-stack application to meet expectations of multiple product owners. My biggest contribution included a dynamic calendar to display accurate information, schedule meetings, and narrow search queries.</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Angular – Finalized front-end visualization with Angular for the federal government to develope a full-stack application to meet the expectations of multiple product owners. My biggest contribution included a dynamic calendar to display accurate information, schedule meetings, and narrow search queries</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web6} width={100} height={100} />
