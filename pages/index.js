@@ -133,7 +133,7 @@ export default function Home() {
               <Image alt="" src={web5} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Angular framework – reliably worked tickets under a large team with the federal government developing a full-stack application to meet expectations of multiple product owners</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Angular – Finalized front-end visualization with the federal government developing a full-stack application to meet expectations of multiple product owners. My biggest contribution included a dynamic calendar to display accurate information, schedule meetings, and narrow search queries.</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web6} width={100} height={100} />
@@ -151,7 +151,7 @@ export default function Home() {
               <Image alt="" src={web7} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Git – deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Git – Deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web8} width={100} height={100} />
@@ -169,7 +169,7 @@ export default function Home() {
               <Image alt="" src={web1} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Spring Boot – reliably worked tickets through large scale teams under the federal government with frontend, back-end, and database components using Spring Boot framework </p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Spring Boot – Reliably worked tickets through large scale teams under the federal government with front-end, back-end, and database components using Spring Boot framework </p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web13} width={100} height={100} />
