@@ -133,7 +133,7 @@ export default function Home() {
               <Image alt="" src={web5} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Angular – Finalized front-end visualization with Angular for the federal government to develope a full-stack application to meet the expectations of multiple product owners. My biggest contribution included a dynamic calendar to display accurate information, schedule meetings, and narrow search queries</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Angular – Finalized front-end visualization with Angular for the federal government to develope a full-stack application while meeting the expectations of multiple product owners. My biggest contribution included a dynamic calendar component to display accurate information, schedule meetings, and narrow search queries</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web6} width={100} height={100} />
