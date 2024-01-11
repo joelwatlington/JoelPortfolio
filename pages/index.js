@@ -127,31 +127,31 @@ export default function Home() {
               <Image alt="" src={web4} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">C# – Utilized ASP.NET and ASP Classic frameworks to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the orginization of coding practices</p>
+              <p className="text-md leading-8 text-gray-800 dark:text-gray-200">C# – Utilized ASP.NET and ASP Classic frameworks to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the orginization of coding practices</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web5} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Angular – Finalized front-end visualization with Angular for the federal government to develope a full-stack application while meeting the expectations of multiple product owners. My biggest contribution included a dynamic calendar component to display accurate information, schedule meetings, and narrow search queries</p>
+              <p className="text-md leading-8 text-gray-800 dark:text-gray-200">Angular – Finalized front-end visualization with Angular for Robins AFB to develope a full-stack application while meeting the expectations of multiple product owners. My biggest contribution included a dynamic calendar component to display accurate information, schedule meetings, and narrow search queries</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web6} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Java – Successfully crafted back-end functionality for API calls using Java while working for the federal government</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Java – Successfully crafted back-end functionality for API calls using Java while working under Robins AFB</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web10} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">JavaScript – Manipulated JavaScript for various data changes in the federal government and the CDC utilizing Rhapsody. There have always been various JavaScript needs such as item selection, Sorting algorithms, math calculations, and so much more!</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">JavaScript – Manipulated JavaScript for various data changes in Robins AFB and under the CDC for the State of Maine utilizing Rhapsody. There have always been various JavaScript needs such as item selection, Sorting algorithms, math calculations, and so much more!</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web7} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Git – Deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Git – Deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository!</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web8} width={100} height={100} />
@@ -175,13 +175,13 @@ export default function Home() {
               <Image alt="" src={web13} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-4 leading-8 text-gray-800 dark:text-gray-200">SQL Developer, PostgreSQL, and SQL Server Management Studio – Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications </p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">SQL Developer, PostgreSQL, and SQL Server Management Studio – Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications. Both Robins AFB and the State of Maine required database management to fix bugs or organizational errors </p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web3} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Docker – Contained programming functionality through Docker under the federal government to improve security and deployment flow</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Docker – Contained programming functionality through Docker under Robins AFB to improve security and deployment flow</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web2} width={100} height={100} />
