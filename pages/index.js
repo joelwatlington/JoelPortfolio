@@ -22,9 +22,12 @@ import web7 from "../public/web7.png";
 import web8 from "../public/web8.png";
 import web9 from "../public/web9.jpg";
 import web10 from "../public/web10.png";
-import web11 from "../public/web11.svg";
-import web12 from "../public/web12.jpg";
-import web13 from "../public/web13.png";
+import web11 from "../public/web11.png";
+import web12 from "../public/web12.svg";
+import web13 from "../public/web13.jpg";
+import web14 from "../public/web14.png";
+import web15 from "../public/web15.png";
+import web16 from "../public/web16.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -172,7 +175,7 @@ export default function Home() {
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Spring Boot – Reliably worked tickets through large scale teams under the federal government with front-end, back-end, and database components using Spring Boot framework </p>
             </Grid>
             <Grid item xs={6} md={2}>
-              <Image alt="" src={web13} width={100} height={100} />
+              <Image alt="" src={web14} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">SQL Developer, PostgreSQL, and SQL Server Management Studio – Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications. Both Robins AFB and the State of Maine required database management to fix bugs or organizational errors </p>
@@ -181,13 +184,25 @@ export default function Home() {
               <Image alt="" src={web3} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Docker – Contained programming functionality through Docker under Robins AFB to improve security and deployment flow</p>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Docker – Contained programming functionality through Docker under Wright Patterson AFB to improve deployment flow. Service containers were used so that data could be stored and pulled from Jfrog to be run later on</p>
             </Grid>
             <Grid item xs={6} md={2}>
               <Image alt="" src={web2} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">Postman – Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web15} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">Gitlab CI/CD, Gitlab runners, and YAML – Initialized jobs through Gitlab pipelines to generate security data and test files while working for Wright Patterson AFB. Executed gitlab CI/CD with runners, and controlled workflow or option using YAML and TOML files</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
+              <Image alt="" src={web16} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">Jfrog – Navigated thousands of files in an effort to download correct versions of files to solve dependency issues for the work under Wright Patterson</p>
             </Grid>
           </Grid>
         </section>
@@ -203,8 +218,28 @@ export default function Home() {
             
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+              <Image class="w-full h-80" src={web13} alt="Sunset in the mountains"/>
+              <div class="px-6 py-4 bg-gray-100 rounded-b">
+                <h1 class="font-bold text-xl mb-2">The State of Maine</h1>
+                <p class="text-gray-700 text-base">
+                  For the state of Maine I was able to rewrite the structure of a program called Local Health Officers through first full-stack analysis, documentation over multiple pages, and many bug fixes. My work additionally involved JavaScript programming for Rhapsody that utilized JavaScript for data manipulation.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Gitlab CI/CD</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Gitlab Runners</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#YAML</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TOML</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Linux</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Docker</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Networks</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Postman</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Jfrog</span>
+              </div>
+            </div>
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
-              <Image class="w-full" src={web11} alt="Sunset in the mountains"/>
+              <Image class="w-full h-80" src={web12} alt="Sunset in the mountains"/>
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">The State of Maine</h1>
                 <p class="text-gray-700 text-base">
@@ -223,7 +258,7 @@ export default function Home() {
               </div>
             </div>
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
-              <Image class="w-full" src={web12} alt="Sunset in the mountains"/>
+              <Image class="w-full h-80 bg-white" src={web11} alt="Sunset in the mountains"/>
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Robins AFB</h1>
                 <p class="text-gray-700 text-base">
@@ -236,7 +271,6 @@ export default function Home() {
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Java</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#JavaScript</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Postman</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Docker</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#PostgreSQL</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Git</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Elasticsearch</span>
