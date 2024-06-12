@@ -28,6 +28,7 @@ import web13 from "../public/web13.jpg";
 import web14 from "../public/web14.png";
 import web15 from "../public/web15.png";
 import web16 from "../public/web16.png";
+import web17 from "../public/web17.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -193,6 +194,12 @@ export default function Home() {
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">Postman – Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine</p>
             </Grid>
             <Grid item xs={6} md={2}>
+              <Image class="bg-white" alt="" src={web17} width={100} height={100} />
+            </Grid>
+            <Grid item xs={6} md={10}>
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">C++ – Edited multiple Cpp and Hpp files for data flow under Wright Patterson to invoke the correct mathematical computations. Additionally throughout college C++ was the language that was used very frequently</p>
+            </Grid>
+            <Grid item xs={6} md={2}>
               <Image alt="" src={web15} width={100} height={100} />
             </Grid>
             <Grid item xs={6} md={10}>
@@ -221,9 +228,9 @@ export default function Home() {
           <div class="max-w-sm rounded overflow-hidden shadow-lg ">
               <Image class="w-full h-80" src={web13} alt="Sunset in the mountains"/>
               <div class="px-6 py-4 bg-gray-100 rounded-b">
-                <h1 class="font-bold text-xl mb-2">The State of Maine</h1>
+                <h1 class="font-bold text-xl mb-2">Wright Patterson AFB</h1>
                 <p class="text-gray-700 text-base">
-                  For the state of Maine I was able to rewrite the structure of a program called Local Health Officers through first full-stack analysis, documentation over multiple pages, and many bug fixes. My work additionally involved JavaScript programming for Rhapsody that utilized JavaScript for data manipulation.
+                  For Wright Patterson I deployed Gitlab runners that executed jobs to create service containers, security tests, and unit tests to push into Jfrog. There have been many examples where I effictively communicated with other teams to solve dependency issues for building our project successfully
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
@@ -232,6 +239,7 @@ export default function Home() {
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#YAML</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TOML</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Linux</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"># C++</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Docker</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Networks</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Postman</span>
@@ -243,7 +251,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">The State of Maine</h1>
                 <p class="text-gray-700 text-base">
-                  For the state of Maine I was able to rewrite the structure of a program called Local Health Officers through first full-stack analysis, documentation over multiple pages, and many bug fixes. My work additionally involved JavaScript programming for Rhapsody that utilized JavaScript for data manipulation.
+                  For the State of Maine I was able to rewrite the structure of a program called Local Health Officers through first full-stack analysis, documentation over multiple pages, and many bug fixes. My work additionally involved JavaScript programming for Rhapsody that utilized JavaScript for data manipulation
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
@@ -262,7 +270,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Robins AFB</h1>
                 <p class="text-gray-700 text-base">
-                  For Robins AFB I created a dynamic calendar, rewrote entire pages for better programming flow, and fixed bugs. My career as an Elasticsearch Engineer saw machine learning, security rules, integration packages, python scripts, and resource management tests being employed.
+                  For Robins AFB I created a dynamic calendar, rewrote entire pages for better programming flow, and fixed bugs. My career as an Elasticsearch Engineer saw machine learning, security rules, integration packages, python scripts, and resource management tests being employed
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
