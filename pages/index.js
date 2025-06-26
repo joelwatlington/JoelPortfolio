@@ -134,7 +134,7 @@ export default function Home() {
             { img: "/web19.png", text: "Eggplant – Operated Eggplant through programming in SenseTalk for writing Test cases. Taught an entire team of developers how to write Eggplant code and execute test cases. These test cases through various methods piece together functions for the purpose of navigating a program, selecting buttons, clicking sliders, and terminating each use case of a project" },
             
           ].map((item, idx) => (
-            <div key={idx} className="flex items-start gap-4 py-2">
+            <div key={idx} className="flex items-start gap-4 py-3">
             <img src={item.img} alt="" className="w-20 h-20 object-cover aspect-square shrink-0 rounded" style={{ objectPosition: "center" }}/>
             <p className="text-md leading-7 text-gray-800 dark:text-gray-200">{item.text}</p>
             </div>
