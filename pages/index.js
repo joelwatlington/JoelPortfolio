@@ -12,23 +12,10 @@ import { useState } from "react";
 import joel from "../public/joelPic1.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
-import web7 from "../public/web7.png";
-import web8 from "../public/web8.png";
-import web9 from "../public/web9.jpg";
-import web10 from "../public/web10.png";
 import web11 from "../public/web11.png";
 import web12 from "../public/web12.svg";
 import web13 from "../public/web13.jpg";
-import web14 from "../public/web14.png";
-import web15 from "../public/web15.png";
-import web16 from "../public/web16.png";
-import web17 from "../public/web17.png";
+import web21 from "../public/web21.jpg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -126,93 +113,35 @@ export default function Home() {
               My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
             </p>
           </div>
-          <Grid container spacing={2}>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web4} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md leading-8 text-gray-800 dark:text-gray-200">C# – Utilized ASP.NET and ASP Classic frameworks to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the orginization of coding practices</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web5} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md leading-8 text-gray-800 dark:text-gray-200">Angular – Finalized front-end visualization with Angular for Robins AFB to develope a full-stack application while meeting the expectations of multiple product owners. My biggest contribution included a dynamic calendar component to display accurate information, schedule meetings, and narrow search queries</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web6} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Java – Successfully crafted back-end functionality for API calls using Java while working under Robins AFB</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web10} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">JavaScript – Manipulated JavaScript for various data changes in Robins AFB and under the CDC for the State of Maine utilizing Rhapsody. There have always been various JavaScript needs such as item selection, Sorting algorithms, math calculations, and so much more!</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web7} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Git – Deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository!</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web8} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md leading-8 text-gray-800 dark:text-gray-200">Elasticsearch, Kibana, EQL, and Lucene – Competently developed tickets through the Elasticsearch team by organizing date and creating install packages. Install packages needed scripts, indice changes, file trees, and written documentation to ensure proper data was loaded into the Elasticsearch image for customer support</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web9} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md leading-8 text-gray-800 dark:text-gray-200">Python – Built multiple scripts i.e. manipulating JSON and NDJSON files under the Elasticsearch team. For every integration package that clients would need to install there included different scripts to help data flow into Elasticsearch for diagram accuracy</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web1} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Spring Boot – Reliably worked tickets through large scale teams under the federal government with front-end, back-end, and database components using Spring Boot framework </p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web14} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">SQL Developer, PostgreSQL, and SQL Server Management Studio – Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications. Both Robins AFB and the State of Maine required database management to fix bugs or organizational errors </p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web3} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Docker – Contained programming functionality through Docker under Wright Patterson AFB to improve deployment flow. Service containers were used so that data could be stored and pulled from Jfrog to be run later on</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web2} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">Postman – Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image class="bg-white" alt="" src={web17} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">C++ – Edited multiple Cpp and Hpp files for data flow under Wright Patterson to invoke the correct mathematical computations. Additionally throughout college C++ was the language that was used very frequently</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web15} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">Gitlab CI/CD, Gitlab runners, and YAML – Initialized jobs through Gitlab pipelines to generate security data and test files while working for Wright Patterson AFB. Executed gitlab CI/CD with runners, and controlled workflow or option using YAML and TOML files</p>
-            </Grid>
-            <Grid item xs={6} md={2}>
-              <Image alt="" src={web16} width={100} height={100} />
-            </Grid>
-            <Grid item xs={6} md={10}>
-              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">Jfrog – Navigated thousands of files in an effort to download correct versions of files to solve dependency issues for the work under Wright Patterson</p>
-            </Grid>
-          </Grid>
+          {[
+            { img: "/web4.png", text: "C# – Utilized ASP.NET and ASP Classic frameworks to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the orginization of coding practices" },
+            { img: "/web5.png", text: "Angular – Finalized front-end visualization with Angular for Robins AFB to develope a full-stack application while meeting the expectations of multiple product owners. My biggest contribution included a dynamic calendar component to display accurate information, schedule meetings, and narrow search queries" },
+            { img: "/web6.png", text: "Java – Successfully crafted back-end functionality for API calls using Java while working under Robins AFB" },
+            { img: "/web17.png", text: "C++ – Edited multiple Cpp and Hpp files for data flow under Wright Patterson to invoke the correct mathematical computations. Additionally throughout college C++ was the language that was used very frequently" },
+            { img: "/web10.png", text: "JavaScript – Manipulated JavaScript for various data changes in Robins AFB and under the CDC for the State of Maine utilizing Rhapsody. There have always been various JavaScript needs such as item selection, Sorting algorithms, math calculations, and so much more!" },
+            { img: "/web7.png", text: "Git – Deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository!" },
+            { img: "/web22.jpg", text: "Bitbucket – Very similar to Git and is able to work with Git commands in order to Deploy code, organize repository files, and boost team productivity. Additionally, has linked Jenkins repositories for scheduled testing" },
+            { img: "/web8.png", text: "Elasticsearch, Kibana, EQL, and Lucene – Competently developed tickets through the Elasticsearch team by organizing date and creating install packages. Install packages needed scripts, indice changes, file trees, and written documentation to ensure proper data was loaded into the Elasticsearch image for customer support" },
+            { img: "/web9.jpg", text: "Python – Built multiple scripts i.e. manipulating JSON and NDJSON files under the Elasticsearch team. For every integration package that clients would need to install there included different scripts to help data flow into Elasticsearch for diagram accuracy" },
+            { img: "/web1.png", text: "Spring Boot – Reliably worked tickets through large scale teams under the federal government with front-end, back-end, and database components using Spring Boot framework" },
+            { img: "/web14.png", text: "SQL Developer, PostgreSQL, and SQL Server Management Studio – Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications. Both Robins AFB and the State of Maine required database management to fix bugs or organizational errors" },
+            { img: "/web3.png", text: "Docker – Contained programming functionality through Docker under Wright Patterson AFB to improve deployment flow. Service containers were used so that data could be stored and pulled from Jfrog to be run later on" },
+            { img: "/web2.png", text: "Postman – Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine" },
+            { img: "/web15.png", text: "Gitlab CI/CD, Gitlab runners, and YAML – Initialized jobs through Gitlab pipelines to generate security data and test files while working for Wright Patterson AFB. Executed gitlab CI/CD with runners, and controlled workflow or option using YAML and TOML files" },
+            { img: "/web18.png", text: "Jenkins – Organized projectes by developing a better space for code production. Created a major improvement for security by using Coverity to scan individual committed files being pushed to the Bitbucket Repository" },
+            { img: "/web16.png", text: "Jfrog – Navigated thousands of files in an effort to download correct versions of files to solve dependency issues for the work under Wright Patterson" },
+            { img: "/web20.png", text: "Groovy – Added onto Jenkins framework by using Groovy functions. Additionally, set parameters through groovy files for pipeline flow" },
+            { img: "/web19.png", text: "Eggplant – Operated Eggplant through programming in SenseTalk for writing Test cases. Taught an entire team of developers how to write Eggplant code and execute test cases. These test cases through various methods piece together functions for the purpose of navigating a program, selecting buttons, clicking sliders, and terminating each use case of a project" },
+            
+          ].map((item, idx) => (
+            <div key={idx} className="flex items-start gap-4 py-2">
+            <img src={item.img} alt="" className="w-20 h-20 object-cover aspect-square shrink-0 rounded" style={{ objectPosition: "center" }}/>
+            <p className="text-md leading-7 text-gray-800 dark:text-gray-200">{item.text}</p>
+            </div>
+          ))}
+
         </section>
+        <br></br>
 		
 		{/* Beginning of work experience portion */}
 		
@@ -220,12 +149,32 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Relevant Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              It has been my privilege to have experience working with <a href="https://www.robins.af.mil/" className="text-teal-500">Robins Air Force Base</a> and the <a href="https://www.maine.gov/portal/index.html" className="text-teal-500">State of Maine</a> over the past two years I have as a Software developer.
+              It has been my privilege to have experience working with <a href="https://www.robins.af.mil/" className="text-teal-500">Robins Air Force Base</a>, <a href="https://www.maine.gov/portal/index.html" className="text-teal-500">State of Maine</a>, <a href="https://www.wpafb.af.mil/" className="text-teal-500">Wright Patterson AFB</a>, and <a href="https://davisdsi.com/" className="text-teal-500">Davis Strategic Innovations</a> over the past four years I have as a Software developer
             </p>
-            
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <Image class="w-full h-80 bg-white" src={web21} alt="Sunset in the mountains"/>
+              <div class="px-6 py-4 bg-gray-100 rounded-b">
+                <h1 class="font-bold text-xl mb-2">DSI under Lockheed Martin</h1>
+                <p class="text-gray-700 text-base">
+                  For Davis Strategic innovations I navigated automation up the entire product chain from writing Eggplant test cases to matching product requirements for created work. I have constructed pipeline solutions using Jenkins, Jfrog, and Groovy code in an effort to increase product deliverability and security 
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Jenkins</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Groovy</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Jfrog</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Eggplant</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#System Requirements</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Leadership</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Git</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Bitbucket</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Linux/Bash scripting</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Python</span>
+              </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg ">
               <Image class="w-full h-80" src={web13} alt="Sunset in the mountains"/>
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Wright Patterson AFB</h1>
