@@ -221,7 +221,7 @@ export default function Home() {
             Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Easy to work with and experienced government employee providing services for any programming need and solution. Connect with me and lets work together!
+              Easy to work with and experienced government employee providing services for any programming need and solution. Connect with me and let's work together!
             </p>
 			
 			{/* Needs to be changed later when video is added */}
@@ -248,19 +248,19 @@ export default function Home() {
                 Coding Expertise
               </h3>
               <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
-                Throughout my years of experience I have been heavily involved with work inside the federal and state government. I am proud of my{" "}
+                Throughout my years of experience, I have been heavily involved with work inside the federal and state government. I am proud of my{" "}
                 <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Top Secret security clearance</span>, {" "}
                 <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/CompTIA_Server_Certificate.pdf" download>
                   CompTIA Server+ Certification
                 </a>, and my{" "}
                 <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/CompTIA_Security_Certificate.pdf" download>
                   CompTIA Security+ Certification
-                </a>{" "}
-                  from working with Robins AFB to say that I am both intelligent and dependable. While working for the State of Maine I earned my nomination for a CARES award by providing excellent customer service through good communication skills and technical knowledge.
+                </a>.{" "}
+                  While working for the State of Maine I earned my nomination for a CARES award by providing excellent customer service through good communication skills and technical knowledge. A year later, I went on to receive formal congratulations after presenting the first automated test case for the Ground Weapons Systems program under DSI which ultimately promoted me to Automation Team Lead! 
               </p>
               <br></br>
               <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
-                My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
+                My programming skills cover a large base ranging from software programming, cloud development, DevOps, security, analytical tools, and so much more!
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
