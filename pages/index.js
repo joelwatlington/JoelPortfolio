@@ -336,7 +336,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Kforce</h1>
                 <p class="text-gray-700 text-base">
-                  In three months, I was able to accomplish 3 times the average workload. Not only did I master the AWS console by editing Terraform, security groups, and IAM Roles- I also deployed a kafka cluster, built an AMI builder pipeline using Docker-in-Docker, and wrote multiple Ansible scripts
+                  In three months, I was able to accomplish 3 times the average workload. Not only did I push terraform code, security group changes, and IAM Role modifications- I also deployed a kafka cluster, built an AMI builder pipeline using federal provided Docker-in-Docker images, and wrote multiple Ansible scripts
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
