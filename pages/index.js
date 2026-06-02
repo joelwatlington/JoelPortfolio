@@ -16,6 +16,7 @@ import web11 from "../public/web11.png";
 import web12 from "../public/web12.svg";
 import web13 from "../public/web13.jpg";
 import web21 from "../public/web21.jpg";
+import web23 from "../public/web23.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -190,7 +191,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
 	  
-	  {/* list for creating the top bar to turn on dark or light mode and navigate the program */}
+	    {/* list for creating the top bar to turn on dark or light mode and navigate the program */}
 	  
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
@@ -242,7 +243,7 @@ export default function Home() {
             Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Easy to work with and experienced government employee providing services for any programming need and solution. Join me down below and lets work together!
+              Easy to work with and experienced government employee providing services for any programming need and solution. Connect with me and lets work together!
             </p>
 			
 			{/* Needs to be changed later when video is added */}
@@ -260,85 +261,102 @@ export default function Home() {
           </div>
         </section>
 		
-		{/* Beginning of coding experience portion. A grid was selected to give concise information in a compact way */}
+		  {/* Beginning of coding experience portion. A grid was selected to give concise information in a compact way */}
 		
         <section id="Coding" className="scroll-smooth focus:scroll-auto bg-slate-900 text-slate-100 py-20 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-6xl mx-auto">
-    {/* Upper Informational Copy */}
-    <div className="mb-14">
-      <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400 mb-4">
-        Coding Expertise
-      </h3>
-      <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
-        Throughout my years of experience I have been heavily involved with work inside the federal and state government. I am proud of my{" "}
-        <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">top-secret security clearance</span>, my{" "}
-        <span className="text-teal-400 font-semibold">linux certification</span>, and my{" "}
-        <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/JoelsCertification.pdf" download>
-          CompTIA Security+ Certification
-        </a>{" "}
-        from working with Robins AFB to say that I am both intelligent and dependable. While working for the State of Maine I earned my nomination for a CARES award by providing excellent customer service through good communication skills and technical knowledge.
-      </p>
-      <p className="text-sm sm:text-base text-slate-400 font-medium mt-4 font-mono">
-        My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
-      </p>
-    </div>
-
-    {/* 2-per-row Desktop Bubble Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
-      {technologyData.map((item) => {
-        const isCurrentExpanded = expandedId === item.id;
-        return (
-          <div 
-            key={item.id} 
-            className={`transition-all duration-300 transform ${
-              isCurrentExpanded ? 'md:col-span-2 scale-[1.005]' : 'hover:scale-[1.01]'
-            }`}
-          >
-            {/* Clickable Long Oval / Pill Bubble */}
-            <button 
-              onClick={() => toggleExpand(item.id)} 
-              aria-expanded={isCurrentExpanded} 
-              className={`w-full text-left p-4 rounded-full border flex items-center justify-between gap-4 transition-all duration-300 relative overflow-hidden group shadow-md ${
-                isCurrentExpanded 
-                  ? 'bg-gradient-to-r from-teal-950/40 via-slate-800 to-slate-800 border-teal-400/80 shadow-teal-950/40' 
-                  : 'bg-slate-800/60 backdrop-blur-sm border-slate-700/60 hover:border-slate-500 hover:bg-slate-800'
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-14">
+              <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400 mb-4">
+                Coding Expertise
+              </h3>
+              <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
+                Throughout my years of experience I have been heavily involved with work inside the federal and state government. I am proud of my{" "}
+                <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">top-secret security clearance</span>, my{" "}
+                <span className="text-teal-400 font-semibold">linux certification</span>, and my{" "}
+                <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/JoelsCertification.pdf" download>
+                  CompTIA Security+ Certification
+                </a>{" "}
+                  from working with Robins AFB to say that I am both intelligent and dependable. While working for the State of Maine I earned my nomination for a CARES award by providing excellent customer service through good communication skills and technical knowledge.
+              </p>
+              <br></br>
+              <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
+                My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
+              {technologyData.map((item) => {
+              const isCurrentExpanded = expandedId === item.id;
+              return (
+              <div 
+              key={item.id} 
+              className={`transition-all duration-300 transform ${
+                isCurrentExpanded ? 'md:col-span-2 scale-[1.005]' : 'hover:scale-[1.01]'
               }`}
-            >
-              {/* Bubble Content (e.g., Title/Icon) Goes Here */}
+              >
+              <button 
+                onClick={() => toggleExpand(item.id)} 
+                aria-expanded={isCurrentExpanded} 
+                className={`w-full text-left p-4 rounded-full border flex items-center justify-between gap-4 transition-all duration-300 relative overflow-hidden group shadow-md ${
+                  isCurrentExpanded 
+                    ? 'bg-gradient-to-r from-teal-950/40 via-slate-800 to-slate-800 border-teal-400/80 shadow-teal-950/40' 
+                    : 'bg-slate-800/60 backdrop-blur-sm border-slate-700/60 hover:border-slate-500 hover:bg-slate-800'
+                }`}
+              >
               <span className="font-semibold text-slate-200 group-hover:text-teal-300 transition-colors">
                 {item.name}
               </span>
-              
-              {/* Expansion Indicator Arrow/Plus */}
               <span className={`transform transition-transform duration-300 ${isCurrentExpanded ? 'rotate-180' : ''}`}>
                 ▼
               </span>
-            </button>
-
-            {/* Expanded Content Area */}
-            {isCurrentExpanded && (
+              </button>
+              {isCurrentExpanded && (
               <div className="mt-3 px-6 py-4 bg-slate-800/40 border border-slate-700/40 rounded-2xl text-slate-300 animate-fadeIn">
                 {item.text}
               </div>
-            )}
+              )}
+              </div>
+              );
+              })}
+            </div>
           </div>
-        );
-      })}
-    </div>
-  </div>
-</section>
+        </section>
 		
-		{/* Beginning of work experience portion */}
+		  {/* Beginning of work experience portion */}
 		
         <section id="Working">
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Relevant Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              It has been my privilege to have experience working with <a href="https://www.robins.af.mil/" className="text-teal-500">Robins Air Force Base</a>, <a href="https://www.maine.gov/portal/index.html" className="text-teal-500">State of Maine</a>, <a href="https://www.wpafb.af.mil/" className="text-teal-500">Wright Patterson AFB</a>, and <a href="https://davisdsi.com/" className="text-teal-500">Davis Strategic Innovations</a> over the past four years I have as a Software developer
+              It has been my privilege to have experience working with <a href="https://www.robins.af.mil/" className="text-teal-500">Robins Air Force Base</a>, <a href="https://www.maine.gov/portal/index.html" className="text-teal-500">State of Maine</a>, <a href="https://www.wpafb.af.mil/" className="text-teal-500">Wright Patterson AFB</a>, <a href="https://davisdsi.com/" className="text-teal-500">Davis Strategic Innovations</a>, and <a href="https://www.kforce.com/" className="text-teal-500">Kforce</a> over the past four and a half years I have as a Mid-Level Cloud Developer, DevOps Engineer, and Automation Engineer Team Lead!
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <Image class="w-full h-80" src={web23} alt="Sunset in the mountains"/>
+              <div class="px-6 py-4 bg-gray-100 rounded-b">
+                <h1 class="font-bold text-xl mb-2">Kforce</h1>
+                <p class="text-gray-700 text-base">
+                  In three months, I was able to accomplish 3 times the average workload. Not only did I master the AWS console by editing Terraform, security groups, and IAM Roles- I also deployed a kafka cluster, built an AMI builder pipeline using Docker-in-Docker, and wrote multiple Ansible scripts
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Ansible</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#AWS Cloud</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Terraform</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Kafka</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Zookeeper</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Linux</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Prometheus</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Docker-in-Docker</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Prometheus</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#AWS Lambda</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Security groups</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Route 53</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#IAM roles</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Patching AMIs</span>
+              </div>
+            </div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
               <Image class="w-full h-80 bg-white" src={web21} alt="Sunset in the mountains"/>
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">DSI under Lockheed Martin</h1>
@@ -425,7 +443,7 @@ export default function Home() {
           </div>
         </section>
 		
-		{/* Beginning of contact portion */}
+		  {/* Beginning of contact portion */}
 		
         <section id="Contact">
           <h3 className="text-3xl py-1 dark:text-white ">Contact</h3>
