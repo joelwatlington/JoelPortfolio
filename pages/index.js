@@ -221,7 +221,7 @@ export default function Home() {
             Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Easy to work with and experienced government employee providing services for any programming need and solution. Connect with me and let's work together!
+              Easy to work with and experienced government employee providing services for any programming need and solution. Connect with me and let`s work together!
             </p>
 			
 			{/* Needs to be changed later when video is added */}
