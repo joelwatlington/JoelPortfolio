@@ -1,6 +1,7 @@
 
 import Head from "next/head";
 import Link from 'next/link';
+import React, { useState } from 'react';
 import {
   AiFillLinkedin,
   AiFillYoutube,
@@ -8,7 +9,6 @@ import {
 import Grid from '@mui/material/Grid';
 import { SiIndeed } from "react-icons/si";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useState } from "react";
 import joel from "../public/joelPic1.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -19,6 +19,167 @@ import web21 from "../public/web21.jpg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+  const [expandedId, setExpandedId] = useState(null);
+  const toggleExpand = (id) => {
+    setExpandedId(expandedId === id ? null : id);
+  };
+
+  const technologyData = [
+    {
+      id: "awscloud",
+      name: "AWS Cloud",
+      summary: "Worked with Cloud Console",
+      img: "/web19.png",
+      text: "Architectured secure cloud infrastructure utilizing IAM roles, Route 53 DNS routing, and security groups; Engineered automated AMI pipelines, deployed Lambda functions, and managed company wide operations through the AWS console"
+    },
+    {
+      id: "terraform",
+      name: "Terraform",
+      summary: "Worked with Cloud Console",
+      img: "/web19.png",
+      text: "Designed a completely new terraform structure under Kforce so that AWS console implementation would not only be consistent but more secure through the alteration of security groups "
+    },
+    {
+      id: "ansible",
+      name: "Ansible",
+      summary: "Worked with Cloud Console",
+      img: "/web19.png",
+      text: "Guided Ansible playbooks under Kforce to dynamically allocate user accounts, streamline patching while also displaying critical version information, and organized health status scripts to replace Puppet licensing through the creation of systemd jobs"
+    },
+    {
+      id: "kafkazookeeper",
+      name: "Kafka and Zookeeper",
+      summary: "Worked with Cloud Console",
+      img: "/web19.png",
+      text: "Deployed multi-node message brokers and managed Zookeeper states to ensure seamless cluster coordination, topic creation, and fault-tolerant data streaming under Kforce"
+    },
+    {
+      id: "csharp",
+      name: "C#",
+      summary: "ASP.NET, ASP Classic, MVC Pattern",
+      img: "/web4.png",
+      text: "Utilized ASP.NET and ASP Classic frameworks to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the organization of coding practices."
+    },
+    {
+      id: "angular",
+      name: "Angular",
+      summary: "Front-End Visualization, Dynamic Dashboards",
+      img: "/web5.png",
+      text: "Finalized front-end visualization with Angular for Robins AFB to develop a full-stack application while meeting the expectations of multiple product owners. My biggest contribution included a dynamic calendar component to display accurate information, schedule meetings, and narrow search queries."
+    },
+    {
+      id: "java",
+      name: "Java",
+      summary: "Back-End Logic, Core API Architectures",
+      img: "/web6.png",
+      text: "Successfully crafted back-end functionality for API calls using Java while working under Robins AFB."
+    },
+    {
+      id: "cpp",
+      name: "C++",
+      summary: "Data Flow, Math Computations, .cpp / .hpp Control",
+      img: "/web17.png",
+      text: "Edited multiple Cpp and Hpp files for data flow under Wright Patterson to invoke the correct mathematical computations. Additionally throughout college C++ was the language that was used very frequently."
+    },
+    {
+      id: "javascript",
+      name: "JavaScript",
+      summary: "Rhapsody Engines, Data Manipulation & Sorting",
+      img: "/web10.png",
+      text: "Manipulated JavaScript for various data changes in Robins AFB and under the CDC for the State of Maine utilizing Rhapsody. There have always been various JavaScript needs such as item selection, Sorting algorithms, math calculations, and so much more!"
+    },
+    {
+      id: "git",
+      name: "Git",
+      summary: "Version Control, Repository Maintenance, Git Bash",
+      img: "/web7.png",
+      text: "Deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository!"
+    },
+    {
+      id: "bitbucket",
+      name: "Bitbucket",
+      summary: "Enterprise Versioning, Jenkins Repository Hooks",
+      img: "/web22.jpg",
+      text: "Very similar to Git and is able to work with Git commands in order to Deploy code, organize repository files, and boost team productivity. Additionally, has linked Jenkins repositories for scheduled testing."
+    },
+    {
+      id: "elasticsearch",
+      name: "Elasticsearch Stack",
+      summary: "Kibana, EQL, Lucene, Integration Packages",
+      img: "/web8.png",
+      text: "Competently developed tickets through the Elasticsearch team by organizing data and creating install packages. Install packages needed scripts, indice changes, file trees, and written documentation to ensure proper data was loaded into the Elasticsearch image for customer support."
+    },
+    {
+      id: "python",
+      name: "Python",
+      summary: "Automation Scripts, JSON / NDJSON Parsing",
+      img: "/web9.jpg",
+      text: "Built multiple scripts i.e. manipulating JSON and NDJSON files under the Elasticsearch team. For every integration package that clients would need to install there included different scripts to help data flow into Elasticsearch for diagram accuracy."
+    },
+    {
+      id: "springboot",
+      name: "Spring Boot",
+      summary: "Enterprise Full-Stack Defense Java Frameworks",
+      img: "/web1.png",
+      text: "Reliably worked tickets through large scale teams under the federal government with front-end, back-end, and database components using Spring Boot framework."
+    },
+    {
+      id: "databases",
+      name: "SQL & Databases",
+      summary: "PostgreSQL, SQL Server (SSMS), Oracle SQL Dev",
+      img: "/web14.png",
+      text: "Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications. Both Robins AFB and the State of Maine required database management to fix bugs or organizational errors."
+    },
+    {
+      id: "docker",
+      name: "Docker",
+      summary: "Containerization, Artifact Delivery, JFrog Flow",
+      img: "/web3.png",
+      text: "Contained programming functionality through Docker under Wright Patterson AFB to improve deployment flow. Service containers were used so that data could be stored and pulled from Jfrog to be run later on."
+    },
+    {
+      id: "postman",
+      name: "Postman",
+      summary: "API Black-box Testing & Endpoint Debugging",
+      img: "/web2.png",
+      text: "Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine."
+    },
+    {
+      id: "gitlab",
+      name: "GitLab CI/CD",
+      summary: "Runners, YAML, TOML Pipeline Controls",
+      img: "/web15.png",
+      text: "Initialized jobs through Gitlab pipelines to generate security data and test files while working for Wright Patterson AFB. Executed gitlab CI/CD with runners, and controlled workflow or option using YAML and TOML files."
+    },
+    {
+      id: "jenkins",
+      name: "Jenkins",
+      summary: "Automation Systems, Coverity Security Scanning",
+      img: "/web18.png",
+      text: "Organized projects by developing a better space for code production. Created a major improvement for security by using Coverity to scan individual committed files being pushed to the Bitbucket Repository."
+    },
+    {
+      id: "jfrog",
+      name: "JFrog",
+      summary: "Artifact Dependency & Secure Version Mapping",
+      img: "/web16.png",
+      text: "Navigated thousands of files in an effort to download correct versions of files to solve dependency issues for the work under Wright Patterson."
+    },
+    {
+      id: "groovy",
+      name: "Groovy",
+      summary: "Pipeline Custom Scripting & Parameter Tuning",
+      img: "/web20.png",
+      text: "Added onto Jenkins framework by using Groovy functions. Additionally, set parameters through groovy files for pipeline flow."
+    },
+    {
+      id: "eggplant",
+      name: "Eggplant (SenseTalk)",
+      summary: "Automated E2E Test Cases, Team Mentorship",
+      img: "/web19.png",
+      text: "Operated Eggplant through programming in SenseTalk for writing Test cases. Taught an entire team of developers how to write Eggplant code and execute test cases. These test cases through various methods piece together functions for the purpose of navigating a program, selecting buttons, clicking sliders, and terminating each use case of a project."
+    }
+  ];
   
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -101,47 +262,71 @@ export default function Home() {
 		
 		{/* Beginning of coding experience portion. A grid was selected to give concise information in a compact way */}
 		
-        <section id="Coding" className="scroll-smooth focus:scroll-auto">
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Coding Expertise</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Throughout my years of experience I have been heavily involved with work inside the federal and state government. I am proud of my <a className="text-teal-500">top-secret security clearance</a>, 
-              my <a className="text-teal-500">linux certification</a>, and my <a className="text-teal-500" href="/JoelsCertification.pdf" download>Comptia Security+ Certification</a> from working with Robins AFB to say that I am both intelligent and dependable. While working for the State of Maine I earned my nomination
-              for a CARES award by providing excellent customer service through good communication skills and technical knowledge.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
-            </p>
-          </div>
-          {[
-            { img: "/web4.png", text: "C# – Utilized ASP.NET and ASP Classic frameworks to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the orginization of coding practices" },
-            { img: "/web5.png", text: "Angular – Finalized front-end visualization with Angular for Robins AFB to develope a full-stack application while meeting the expectations of multiple product owners. My biggest contribution included a dynamic calendar component to display accurate information, schedule meetings, and narrow search queries" },
-            { img: "/web6.png", text: "Java – Successfully crafted back-end functionality for API calls using Java while working under Robins AFB" },
-            { img: "/web17.png", text: "C++ – Edited multiple Cpp and Hpp files for data flow under Wright Patterson to invoke the correct mathematical computations. Additionally throughout college C++ was the language that was used very frequently" },
-            { img: "/web10.png", text: "JavaScript – Manipulated JavaScript for various data changes in Robins AFB and under the CDC for the State of Maine utilizing Rhapsody. There have always been various JavaScript needs such as item selection, Sorting algorithms, math calculations, and so much more!" },
-            { img: "/web7.png", text: "Git – Deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository!" },
-            { img: "/web22.jpg", text: "Bitbucket – Very similar to Git and is able to work with Git commands in order to Deploy code, organize repository files, and boost team productivity. Additionally, has linked Jenkins repositories for scheduled testing" },
-            { img: "/web8.png", text: "Elasticsearch, Kibana, EQL, and Lucene – Competently developed tickets through the Elasticsearch team by organizing date and creating install packages. Install packages needed scripts, indice changes, file trees, and written documentation to ensure proper data was loaded into the Elasticsearch image for customer support" },
-            { img: "/web9.jpg", text: "Python – Built multiple scripts i.e. manipulating JSON and NDJSON files under the Elasticsearch team. For every integration package that clients would need to install there included different scripts to help data flow into Elasticsearch for diagram accuracy" },
-            { img: "/web1.png", text: "Spring Boot – Reliably worked tickets through large scale teams under the federal government with front-end, back-end, and database components using Spring Boot framework" },
-            { img: "/web14.png", text: "SQL Developer, PostgreSQL, and SQL Server Management Studio – Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications. Both Robins AFB and the State of Maine required database management to fix bugs or organizational errors" },
-            { img: "/web3.png", text: "Docker – Contained programming functionality through Docker under Wright Patterson AFB to improve deployment flow. Service containers were used so that data could be stored and pulled from Jfrog to be run later on" },
-            { img: "/web2.png", text: "Postman – Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine" },
-            { img: "/web15.png", text: "Gitlab CI/CD, Gitlab runners, and YAML – Initialized jobs through Gitlab pipelines to generate security data and test files while working for Wright Patterson AFB. Executed gitlab CI/CD with runners, and controlled workflow or option using YAML and TOML files" },
-            { img: "/web18.png", text: "Jenkins – Organized projectes by developing a better space for code production. Created a major improvement for security by using Coverity to scan individual committed files being pushed to the Bitbucket Repository" },
-            { img: "/web16.png", text: "Jfrog – Navigated thousands of files in an effort to download correct versions of files to solve dependency issues for the work under Wright Patterson" },
-            { img: "/web20.png", text: "Groovy – Added onto Jenkins framework by using Groovy functions. Additionally, set parameters through groovy files for pipeline flow" },
-            { img: "/web19.png", text: "Eggplant – Operated Eggplant through programming in SenseTalk for writing Test cases. Taught an entire team of developers how to write Eggplant code and execute test cases. These test cases through various methods piece together functions for the purpose of navigating a program, selecting buttons, clicking sliders, and terminating each use case of a project" },
-            
-          ].map((item, idx) => (
-            <div key={idx} className="flex items-start gap-4 py-3">
-            <img src={item.img} alt="" className="w-20 h-20 object-cover aspect-square shrink-0 rounded" style={{ objectPosition: "center" }}/>
-            <p className="text-md leading-7 text-gray-800 dark:text-gray-200">{item.text}</p>
-            </div>
-          ))}
+        <section id="Coding" className="scroll-smooth focus:scroll-auto bg-slate-900 text-slate-100 py-20 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-6xl mx-auto">
+    {/* Upper Informational Copy */}
+    <div className="mb-14">
+      <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400 mb-4">
+        Coding Expertise
+      </h3>
+      <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
+        Throughout my years of experience I have been heavily involved with work inside the federal and state government. I am proud of my{" "}
+        <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">top-secret security clearance</span>, my{" "}
+        <span className="text-teal-400 font-semibold">linux certification</span>, and my{" "}
+        <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/JoelsCertification.pdf" download>
+          CompTIA Security+ Certification
+        </a>{" "}
+        from working with Robins AFB to say that I am both intelligent and dependable. While working for the State of Maine I earned my nomination for a CARES award by providing excellent customer service through good communication skills and technical knowledge.
+      </p>
+      <p className="text-sm sm:text-base text-slate-400 font-medium mt-4 font-mono">
+        My programming skills cover a large base ranging from frameworks, to analytical tools, and so much more!
+      </p>
+    </div>
 
-        </section>
-        <br></br>
+    {/* 2-per-row Desktop Bubble Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
+      {technologyData.map((item) => {
+        const isCurrentExpanded = expandedId === item.id;
+        return (
+          <div 
+            key={item.id} 
+            className={`transition-all duration-300 transform ${
+              isCurrentExpanded ? 'md:col-span-2 scale-[1.005]' : 'hover:scale-[1.01]'
+            }`}
+          >
+            {/* Clickable Long Oval / Pill Bubble */}
+            <button 
+              onClick={() => toggleExpand(item.id)} 
+              aria-expanded={isCurrentExpanded} 
+              className={`w-full text-left p-4 rounded-full border flex items-center justify-between gap-4 transition-all duration-300 relative overflow-hidden group shadow-md ${
+                isCurrentExpanded 
+                  ? 'bg-gradient-to-r from-teal-950/40 via-slate-800 to-slate-800 border-teal-400/80 shadow-teal-950/40' 
+                  : 'bg-slate-800/60 backdrop-blur-sm border-slate-700/60 hover:border-slate-500 hover:bg-slate-800'
+              }`}
+            >
+              {/* Bubble Content (e.g., Title/Icon) Goes Here */}
+              <span className="font-semibold text-slate-200 group-hover:text-teal-300 transition-colors">
+                {item.name}
+              </span>
+              
+              {/* Expansion Indicator Arrow/Plus */}
+              <span className={`transform transition-transform duration-300 ${isCurrentExpanded ? 'rotate-180' : ''}`}>
+                ▼
+              </span>
+            </button>
+
+            {/* Expanded Content Area */}
+            {isCurrentExpanded && (
+              <div className="mt-3 px-6 py-4 bg-slate-800/40 border border-slate-700/40 rounded-2xl text-slate-300 animate-fadeIn">
+                {item.text}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
 		
 		{/* Beginning of work experience portion */}
 		
