@@ -250,13 +250,10 @@ export default function Home() {
               <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
                 Throughout my years of experience, I have been heavily involved with work inside the federal and state government. I am proud of my{" "}
                 <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Top Secret security clearance</span>, {" "}
-                <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/CompTIA_Server_Certificate.pdf" download>
-                  CompTIA Server+ Certification
-                </a>, and my{" "}
-                <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/CompTIA_Security_Certificate.pdf" download>
-                  CompTIA Security+ Certification
-                </a>.{" "}
-                  While working for the State of Maine I earned my nomination for a CARES award by providing excellent customer service through good communication skills and technical knowledge. A year later, I went on to receive formal congratulations after presenting the first automated test case for the Ground Weapons Systems program under DSI which ultimately promoted me to Automation Team Lead! 
+                <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/CompTIA_Server_Certificate.pdf" download> CompTIA Server+ Certification </a>, and my{" "}
+                <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/CompTIA_Security_Certificate.pdf" download> CompTIA Security+ Certification </a>.{" "}
+                  While working for the State of Maine, I earned my nomination for a CARES award by providing excellent customer service through good communication skills and technical knowledge. A year later, I went on to receive {" "}
+                <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">formal congratulations after presenting the first automated test case</span> for the Ground Weapons Systems program under DSI which ultimately promoted me to Automation Team Lead!
               </p>
               <br></br>
               <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
@@ -307,7 +304,15 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Relevant Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              It has been my privilege to have experience working with <a href="https://www.robins.af.mil/" className="text-teal-500">Robins Air Force Base</a>, <a href="https://www.maine.gov/portal/index.html" className="text-teal-500">State of Maine</a>, <a href="https://www.wpafb.af.mil/" className="text-teal-500">Wright Patterson AFB</a>, <a href="https://davisdsi.com/" className="text-teal-500">Davis Strategic Innovations</a>, and <a href="https://www.kforce.com/" className="text-teal-500">Kforce</a> over the past four and a half years I have as a Mid-Level Cloud Developer, DevOps Engineer, and Automation Engineer Team Lead!
+              It has been my privilege to have experience working with{" "}
+            <a href="https://www.robins.af.mil/" className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Robins Air Force Base</a>,{" "}
+            <a href="https://www.maine.gov/portal/index.html" className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">State of Maine</a>,{" "}
+            <a href="https://www.wpafb.af.mil/" className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Wright Patterson AFB</a>,{" "}
+            <a href="https://davisdsi.com/" className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Davis Strategic Innovations</a>, and{" "}
+            <a href="https://www.kforce.com/" className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Kforce.</a> Over the past four and a half years I have held the title of{" "}
+            <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Mid-Level Cloud Developer</span>,{" "}
+            <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Automation Team Lead</span>, and{" "}
+            <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Software Developer</span>!
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
