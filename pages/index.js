@@ -30,154 +30,132 @@ export default function Home() {
       id: "awscloud",
       name: "AWS Cloud",
       summary: "Worked with Cloud Console",
-      img: "/web19.png",
       text: "Architectured secure cloud infrastructure utilizing IAM roles, Route 53 DNS routing, and security groups; Engineered automated AMI pipelines, deployed Lambda functions, and managed company wide operations through the AWS console"
     },
     {
       id: "terraform",
       name: "Terraform",
       summary: "Worked with Cloud Console",
-      img: "/web19.png",
-      text: "Designed a completely new terraform structure under Kforce so that AWS console implementation would not only be consistent but more secure through the alteration of security groups "
+      text: "Designed a completely new terraform structure under Kforce so that AWS console implementation would not only be consistent but more secure through the alteration of security groups. I was able to accomplish this by replacing the previous approach of having a single terraform file with multiple security group definitions into multiple separate files that were in bite sized pieces. Not only this, but the previous version had multiple egress and ingress rules defined in different places for the same security group, causing logic errors. The attic file was extremely long, and I reduced the complexity of this by placing the egress/ingress rules only in the bite-sized terraform files that I created"
     },
     {
       id: "ansible",
       name: "Ansible",
       summary: "Worked with Cloud Console",
-      img: "/web19.png",
-      text: "Guided Ansible playbooks under Kforce to dynamically allocate user accounts, streamline patching while also displaying critical version information, and organized health status scripts to replace Puppet licensing through the creation of systemd jobs"
+      text: "Served as the team's go-to Ansible expert under Kforce, specializing in cloud automation and cost reduction. I designed and deployed playbooks that converted Jinja2 templates into systemd-driven shell scripts, successfully migrating our health monitoring to Prometheus and eliminating expensive Puppet licenses. Additionally, I built dynamic user provisioning pipelines and an automated AMI patching workflow driven by AWS Parameter Store variables, ensuring efficient node updates and robust statistical reporting."
     },
     {
       id: "kafkazookeeper",
       name: "Kafka and Zookeeper",
       summary: "Worked with Cloud Console",
-      img: "/web19.png",
       text: "Deployed multi-node message brokers and managed Zookeeper states to ensure seamless cluster coordination, topic creation, and fault-tolerant data streaming under Kforce"
     },
     {
       id: "csharp",
       name: "C#",
       summary: "ASP.NET, ASP Classic, MVC Pattern",
-      img: "/web4.png",
       text: "Utilized ASP.NET and ASP Classic frameworks to maintain programs using C# and have a strong grasp of the language throughout working with the State of Maine. The MVC design pattern was critical for the organization of coding practices."
     },
     {
       id: "angular",
       name: "Angular",
       summary: "Front-End Visualization, Dynamic Dashboards",
-      img: "/web5.png",
       text: "Finalized front-end visualization with Angular for Robins AFB to develop a full-stack application while meeting the expectations of multiple product owners. My biggest contribution included a dynamic calendar component to display accurate information, schedule meetings, and narrow search queries."
     },
     {
       id: "java",
       name: "Java",
       summary: "Back-End Logic, Core API Architectures",
-      img: "/web6.png",
       text: "Successfully crafted back-end functionality for API calls using Java while working under Robins AFB."
     },
     {
       id: "cpp",
       name: "C++",
       summary: "Data Flow, Math Computations, .cpp / .hpp Control",
-      img: "/web17.png",
       text: "Edited multiple Cpp and Hpp files for data flow under Wright Patterson to invoke the correct mathematical computations. Additionally throughout college C++ was the language that was used very frequently."
     },
     {
       id: "javascript",
       name: "JavaScript",
       summary: "Rhapsody Engines, Data Manipulation & Sorting",
-      img: "/web10.png",
       text: "Manipulated JavaScript for various data changes in Robins AFB and under the CDC for the State of Maine utilizing Rhapsody. There have always been various JavaScript needs such as item selection, Sorting algorithms, math calculations, and so much more!"
     },
     {
       id: "git",
       name: "Git",
       summary: "Version Control, Repository Maintenance, Git Bash",
-      img: "/web7.png",
       text: "Deployed code, organized repository files, and boosted team productivity. Very efficient with Git bash through the commands necessary to pull, commit, comment, and push to the repository!"
     },
     {
       id: "bitbucket",
       name: "Bitbucket",
       summary: "Enterprise Versioning, Jenkins Repository Hooks",
-      img: "/web22.jpg",
       text: "Very similar to Git and is able to work with Git commands in order to Deploy code, organize repository files, and boost team productivity. Additionally, has linked Jenkins repositories for scheduled testing."
     },
     {
       id: "elasticsearch",
       name: "Elasticsearch Stack",
       summary: "Kibana, EQL, Lucene, Integration Packages",
-      img: "/web8.png",
       text: "Competently developed tickets through the Elasticsearch team by organizing data and creating install packages. Install packages needed scripts, indice changes, file trees, and written documentation to ensure proper data was loaded into the Elasticsearch image for customer support."
     },
     {
       id: "python",
       name: "Python",
       summary: "Automation Scripts, JSON / NDJSON Parsing",
-      img: "/web9.jpg",
       text: "Built multiple scripts i.e. manipulating JSON and NDJSON files under the Elasticsearch team. For every integration package that clients would need to install there included different scripts to help data flow into Elasticsearch for diagram accuracy."
     },
     {
       id: "springboot",
       name: "Spring Boot",
       summary: "Enterprise Full-Stack Defense Java Frameworks",
-      img: "/web1.png",
       text: "Reliably worked tickets through large scale teams under the federal government with front-end, back-end, and database components using Spring Boot framework."
     },
     {
       id: "databases",
       name: "SQL & Databases",
       summary: "PostgreSQL, SQL Server (SSMS), Oracle SQL Dev",
-      img: "/web14.png",
       text: "Has no problem fixing database related issues or mapping large database tables for programming new functionality in web applications. Both Robins AFB and the State of Maine required database management to fix bugs or organizational errors."
     },
     {
       id: "docker",
       name: "Docker",
       summary: "Containerization, Artifact Delivery, JFrog Flow",
-      img: "/web3.png",
       text: "Contained programming functionality through Docker under Wright Patterson AFB to improve deployment flow. Service containers were used so that data could be stored and pulled from Jfrog to be run later on."
     },
     {
       id: "postman",
       name: "Postman",
       summary: "API Black-box Testing & Endpoint Debugging",
-      img: "/web2.png",
       text: "Resourcefully used postman for testing and debugging website API calls throughout my experience in the federal government and the State of Maine."
     },
     {
       id: "gitlab",
       name: "GitLab CI/CD",
       summary: "Runners, YAML, TOML Pipeline Controls",
-      img: "/web15.png",
       text: "Initialized jobs through Gitlab pipelines to generate security data and test files while working for Wright Patterson AFB. Executed gitlab CI/CD with runners, and controlled workflow or option using YAML and TOML files."
     },
     {
       id: "jenkins",
       name: "Jenkins",
       summary: "Automation Systems, Coverity Security Scanning",
-      img: "/web18.png",
       text: "Organized projects by developing a better space for code production. Created a major improvement for security by using Coverity to scan individual committed files being pushed to the Bitbucket Repository."
     },
     {
       id: "jfrog",
       name: "JFrog",
       summary: "Artifact Dependency & Secure Version Mapping",
-      img: "/web16.png",
       text: "Navigated thousands of files in an effort to download correct versions of files to solve dependency issues for the work under Wright Patterson."
     },
     {
       id: "groovy",
       name: "Groovy",
       summary: "Pipeline Custom Scripting & Parameter Tuning",
-      img: "/web20.png",
       text: "Added onto Jenkins framework by using Groovy functions. Additionally, set parameters through groovy files for pipeline flow."
     },
     {
       id: "eggplant",
       name: "Eggplant (SenseTalk)",
       summary: "Automated E2E Test Cases, Team Mentorship",
-      img: "/web19.png",
       text: "Operated Eggplant through programming in SenseTalk for writing Test cases. Taught an entire team of developers how to write Eggplant code and execute test cases. These test cases through various methods piece together functions for the purpose of navigating a program, selecting buttons, clicking sliders, and terminating each use case of a project."
     }
   ];
