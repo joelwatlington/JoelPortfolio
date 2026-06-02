@@ -249,9 +249,11 @@ export default function Home() {
               </h3>
               <p className="text-base sm:text-lg leading-8 text-slate-300 max-w-4xl">
                 Throughout my years of experience I have been heavily involved with work inside the federal and state government. I am proud of my{" "}
-                <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">top-secret security clearance</span>, my{" "}
-                <span className="text-teal-400 font-semibold">linux certification</span>, and my{" "}
-                <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/JoelsCertification.pdf" download>
+                <span className="text-teal-400 font-semibold shadow-[0_0_15px_rgba(45,212,191,0.1)]">Top Secret security clearance</span>, {" "}
+                <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/CompTIA_Server_Certificate.pdf" download>
+                  CompTIA Server+ Certification
+                </a>, and my{" "}
+                <a className="text-teal-400 font-semibold underline decoration-dotted hover:text-teal-300 transition-colors" href="/CompTIA_Security_Certificate.pdf" download>
                   CompTIA Security+ Certification
                 </a>{" "}
                   from working with Robins AFB to say that I am both intelligent and dependable. While working for the State of Maine I earned my nomination for a CARES award by providing excellent customer service through good communication skills and technical knowledge.
