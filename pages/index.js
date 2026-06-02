@@ -36,7 +36,7 @@ export default function Home() {
       id: "terraform",
       name: "Terraform",
       summary: "Worked with Cloud Console",
-      text: "Designed a completely new terraform structure under Kforce so that AWS console implementation would not only be consistent but more secure through the alteration of security groups. I was able to accomplish this by replacing the previous approach of having a single terraform file with multiple security group definitions into multiple separate files that were in bite sized pieces. Not only this, but the previous version had multiple egress and ingress rules defined in different places for the same security group, causing logic errors. The attic file was extremely long, and I reduced the complexity of this by placing the egress/ingress rules only in the bite-sized terraform files that I created"
+      text: "Spearheaded the modernization of our cloud infrastructure under Kforce by redesigning a monolithic Terraform architecture into a clean, modular structure. To resolve critical logic errors and security risks, I deconstructed a massive legacy configuration file into isolated, bite-sized manifests. By auditing scattered ingress and egress rules, I consolidated network permissions directly within these new files. This initiative eliminated configuration conflicts, hardened our AWS Security Groups, and established a consistent, secure framework for all future console deployments."
     },
     {
       id: "ansible",
