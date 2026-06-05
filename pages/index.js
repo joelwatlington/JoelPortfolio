@@ -202,7 +202,7 @@ export default function Home() {
             </ul>
           </nav>
 		  
-		  {/* Introduction statement with a motion div to add an animation to the title */}
+		      {/* Introduction statement with a motion div to add an animation to the title */}
 		  
           <motion.div 
             initial={{ opacity: 0, y: -50 }}
@@ -211,7 +211,7 @@ export default function Home() {
             className="text-6xl flex justify-center text-teal-500"
           >
           Joel Watlington
-		  </motion.div>
+		      </motion.div>
           <div className="text-center p-10 py-10">
           
             <h3 className="text-2xl py-3 dark:text-white md:text-3xl">
@@ -224,7 +224,7 @@ export default function Home() {
               Easy to work with and experienced government employee providing services for any programming need and solution. Connect with me and let`s work together!
             </p>
 			
-			{/* Needs to be changed later when video is added */}
+			      {/* Needs to be changed later when video is added */}
 			
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/joel-watlington-392058200/" target="_blank" rel="noreferrer">
@@ -239,10 +239,11 @@ export default function Home() {
           </div>
         </section>
 		
-		  {/* Beginning of coding experience portion. A grid was selected to give concise information in a compact way */}
+		      {/* Beginning of coding experience portion. A grid was selected to give concise information in a compact way */}
 		
-        <section id="Coding" className="scroll-smooth focus:scroll-auto bg-slate-900 text-slate-100 py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+        <section id="Coding">
+
+          <div className="max-w-6xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
             <div className="mb-14">
               <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400 mb-4">
                 Coding Expertise
