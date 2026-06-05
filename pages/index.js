@@ -322,7 +322,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Kforce</h1>
                 <p class="text-gray-700 text-base">
-                  Successfully completed a three-month contract by provisioning Terraform code, optimizing security groups, and managing IAM Role modifications. Additionally, I deployed a Kafka cluster, engineered an AMI builder pipeline using federally provided Docker-in-Docker images, and authored multiple Ansible playbooks
+                  Successfully completed a three-month contract by provisioning Terraform code, optimizing security groups, and managing IAM Role modifications. Additionally, I deployed a Kafka cluster, engineered an AMI builder pipeline using federal Docker-in-Docker images, and authored multiple Ansible playbooks
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
