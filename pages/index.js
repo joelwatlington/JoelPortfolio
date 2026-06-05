@@ -322,7 +322,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Kforce</h1>
                 <p class="text-gray-700 text-base">
-                  Successfully completed a three-month contract by provisioning Terraform code, optimizing security groups, and managing IAM Role modifications. Additionally, I deployed a Kafka cluster, engineered an AMI builder pipeline using federal Docker-in-Docker images, and authored multiple Ansible playbooks
+                  I successfully completed a three-month contract by provisioning Terraform code, optimizing security groups, and managing IAM Role modifications. Additionally, I deployed a Kafka cluster, engineered an AMI builder pipeline using federally provided Docker-in-Docker images, and authored multiple Ansible playbooks
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
@@ -347,7 +347,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">DSI under Lockheed Martin</h1>
                 <p class="text-gray-700 text-base">
-                  For Davis Strategic innovations I navigated automation up the entire product chain from writing Eggplant test cases to matching product requirements for created work. I have constructed pipeline solutions using Jenkins, Jfrog, and Groovy code in an effort to increase product deliverability and security 
+                  I drove automation strategies across the entire product lifecycle, from authoring Eggplant test cases to engineering robust CI/CD pipelines, I created DevOps solutions through Jenkins, JFrog Artifactory, and Groovy scripting to significantly accelerate product deliverability, optimize build security, and streamline release cycles 
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
@@ -368,7 +368,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Wright Patterson AFB</h1>
                 <p class="text-gray-700 text-base">
-                  For Wright Patterson I deployed Gitlab runners that executed jobs to create service containers, security tests, and unit tests to push into Jfrog. There have been many examples where I effictively communicated with other teams to solve dependency issues for building our project successfully
+                  I deployed GitLab runners to automate pipelines that executed jobs for building service containers, running security scans, and performing unit tests prior to pushing artifacts into JFrog. Throughout this process, I frequently collaborated with cross-functional teams to resolve complex dependency issues, ensuring successful and reliable project builds
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
@@ -389,7 +389,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">The State of Maine</h1>
                 <p class="text-gray-700 text-base">
-                  For the State of Maine I was able to rewrite the structure of a program called Local Health Officers through first full-stack analysis, documentation over multiple pages, and many bug fixes. My work additionally involved JavaScript programming for Rhapsody that utilized JavaScript for data manipulation
+                  I completely changed the Local Health Officers application by executing a comprehensive full-stack analysis, resolving numerous legacy bugs, and authoring multiple pages of technical documentation. My work additionally involved JavaScript programming for Rhapsody that utilized JavaScript for data manipulation and ingest
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
@@ -408,7 +408,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Robins AFB</h1>
                 <p class="text-gray-700 text-base">
-                  For Robins AFB I created a dynamic calendar, rewrote entire pages for better programming flow, and fixed bugs. My career as an Elasticsearch Engineer saw machine learning, security rules, integration packages, python scripts, and resource management tests being employed
+                  As an Elasticsearch Engineer, I designed advanced cluster architectures featuring machine learning anomaly detection, SIEM security rules, and tailored data integration packages. Additionally, I authored custom Python automation scripts and executed thorough resource management testing to maximize search performance, index stability, and cluster scaling efficiency
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
