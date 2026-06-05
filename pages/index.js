@@ -408,7 +408,7 @@ export default function Home() {
               <div class="px-6 py-4 bg-gray-100 rounded-b">
                 <h1 class="font-bold text-xl mb-2">Robins AFB</h1>
                 <p class="text-gray-700 text-base">
-                  As an Elasticsearch Engineer, I designed advanced cluster architectures featuring machine learning anomaly detection, SIEM security rules, and tailored data integration packages. Additionally, I authored custom Python automation scripts and executed thorough resource management testing to maximize search performance, index stability, and cluster scaling efficiency
+                  As an Elasticsearch Engineer, I designed advanced cluster architectures featuring machine learning anomaly detection, SIEM security rules, and tailored data integration packages. I authored Python scripts for data manipulation and executed thorough resource management testing to maximize search performance, index stability, and cluster scaling
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
