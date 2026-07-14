@@ -320,7 +320,7 @@ export default function Home() {
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
               <Image class="w-full h-80" src={web23} alt="Sunset in the mountains"/>
               <div class="px-6 py-4 bg-gray-100 rounded-b">
-                <h1 class="font-bold text-xl mb-2">Kforce</h1>
+                <h1 class="font-bold text-xl mb-2">FBI with Kforce</h1>
                 <p class="text-gray-700 text-base">
                   I successfully completed a three-month contract by provisioning Terraform code, optimizing security groups, and managing IAM Role modifications. Additionally, I deployed a Kafka cluster, engineered an AMI builder pipeline using federally provided Docker-in-Docker images, and authored multiple Ansible playbooks
                 </p>
@@ -345,7 +345,7 @@ export default function Home() {
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
               <Image class="w-full h-80 bg-white" src={web21} alt="Sunset in the mountains"/>
               <div class="px-6 py-4 bg-gray-100 rounded-b">
-                <h1 class="font-bold text-xl mb-2">DSI under Lockheed Martin</h1>
+                <h1 class="font-bold text-xl mb-2">Northrop Grumman with DSI</h1>
                 <p class="text-gray-700 text-base">
                   I drove automation strategies across the entire product lifecycle, from authoring Eggplant test cases to engineering robust CI/CD pipelines, I created DevOps solutions through Jenkins, JFrog Artifactory, and Groovy scripting to significantly accelerate product deliverability, optimize build security, and streamline release cycles 
                 </p>
@@ -366,7 +366,7 @@ export default function Home() {
             <div class="max-w-sm rounded overflow-hidden shadow-lg ">
               <Image class="w-full h-80" src={web13} alt="Sunset in the mountains"/>
               <div class="px-6 py-4 bg-gray-100 rounded-b">
-                <h1 class="font-bold text-xl mb-2">Wright Patterson AFB</h1>
+                <h1 class="font-bold text-xl mb-2">Wright Patterson AFB with IG</h1>
                 <p class="text-gray-700 text-base">
                   I deployed GitLab runners to automate pipelines that executed jobs for building service containers, running security scans, and performing unit tests prior to pushing artifacts into JFrog. Throughout this process, I frequently collaborated with cross-functional teams to resolve complex dependency issues, ensuring successful and reliable project builds
                 </p>
